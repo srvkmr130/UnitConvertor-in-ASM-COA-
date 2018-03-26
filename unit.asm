@@ -47,3 +47,17 @@
 	.string	"The Fahrenheit value is:%f in"
 .LC28:
 	.string	"The Kelvin value is:%f ft"
+main:
+.LFB0:
+	.cfi_startproc
+	pushq	%rbp
+	.cfi_def_cfa_offset 16
+	.cfi_offset 6, -16
+	movq	%rsp, %rbp
+	.cfi_def_cfa_register 6
+	subq	$32, %rsp
+	movq	%fs:40, %rax
+	movq	%rax, -8(%rbp)
+	xorl	%eax, %eax
+	movl	$.LC0, %edi
+	call	puts
