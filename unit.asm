@@ -61,3 +61,7 @@ main:
 	xorl	%eax, %eax
 	movl	$.LC0, %edi
 	call	puts
+        movl	$.LC1, %edi
+	call	puts
+	movl	$.LC2, %edi
+	call	puts
