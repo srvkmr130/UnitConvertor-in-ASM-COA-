@@ -65,3 +65,21 @@ main:
 	call	puts
 	movl	$.LC2, %edi
 	call	puts
+        leaq	-20(%rbp), %rax
+	movq	%rax, %rsi
+	movl	$.LC3, %edi
+	movl	$0, %eax
+	call	__isoc99_scanf
+	movl	$.LC4, %edi
+	call	puts
+	leaq	-12(%rbp), %rax
+	movq	%rax, %rsi
+	movl	$.LC5, %edi
+	movl	$0, %eax
+	call	__isoc99_scanf
+	movl	-20(%rbp), %eax
+	cmpl	$1, %eax
+	je	.L3
+	cmpl	$2, %eax
+	je	.L4
+	jmp	.L18
