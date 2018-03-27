@@ -1,1 +1,14 @@
-
+.data
+error: .asciiz"\nthe value remains same  \n"
+msg1 : .asciiz"Enter 1 for length and 2 for tempreature covertion"
+msg2 : .asciiz"\n\nEnter the current unit press 1 for cm,2 for inch,3 for foot,4 for meter,5 for km "
+msg3 : .asciiz"\n\nEnter the current unit press 1 for celcius,2 for fahrenheit,3 for kelvin"
+lencm: .asciiz"\n\nEnter the length in cm"
+leninch: .asciiz"\n\nEnter the length in inch"
+lenfoot: .asciiz"\n\nEnter the length in foot"
+lenmeter: .asciiz"\n\nEnter the length in meter"
+lenkm: .asciiz"\n\nEnter the length in km"
+tempc: .asciiz"\n\nEnter the temperature in celcius"
+tempk: .asciiz"\n\nEnter the temperature in kelvin"
+tempf: .asciiz"\n\nEnter the temperature in fahrenheit"
+c: .asciiz"\n\nThe value in celcius = "
