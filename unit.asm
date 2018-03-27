@@ -83,3 +83,6 @@ main:
 	cmpl	$2, %eax
 	je	.L4
 	jmp	.L18
+.L3:
+	movl	$.LC6, %edi
+	call	puts
