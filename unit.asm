@@ -86,3 +86,7 @@ main:
 .L3:
 	movl	$.LC6, %edi
 	call	puts
+	movl	$.LC7, %edi
+	call	puts
+	movl	$.LC8, %edi
+	call	puts
