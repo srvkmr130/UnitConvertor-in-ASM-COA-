@@ -90,3 +90,23 @@ main:
 	call	puts
 	movl	$.LC8, %edi
 	call	puts
+	movl	$.LC9, %edi
+	call	puts
+	movl	$.LC10, %edi
+	call	puts
+	movl	$.LC11, %edi
+	call	puts
+	leaq	-16(%rbp), %rax
+	movq	%rax, %rsi
+	movl	$.LC3, %edi
+	movl	$0, %eax
+	call	__isoc99_scanf
+	movl	-16(%rbp), %eax
+	cmpl	$5, %eax
+	ja	.L17
+	movl	%eax, %eax
+	movq	.L7(,%rax,8), %rax
+	jmp	*%rax
+	.section	.rodata
+	.align 8
+	.align 4
