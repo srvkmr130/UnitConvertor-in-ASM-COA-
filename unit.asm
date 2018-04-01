@@ -110,3 +110,20 @@ main:
 	.section	.rodata
 	.align 8
 	.align 4
+.L7:
+	.quad	.L17
+	.quad	.L6
+	.quad	.L8
+	.quad	.L9
+	.quad	.L10
+	.quad	.L11
+	.text
+.L6:
+	movss	-12(%rbp), %xmm1
+	movss	.LC12(%rip), %xmm0
+	mulss	%xmm1, %xmm0
+	cvtss2sd	%xmm0, %xmm0
+	movl	$.LC13, %edi
+	movl	$1, %eax
+	call	printf
+	jmp	.L5
