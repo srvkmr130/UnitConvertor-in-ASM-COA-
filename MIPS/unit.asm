@@ -12,3 +12,16 @@ tempc: .asciiz"\n\nEnter the temperature in celcius"
 tempk: .asciiz"\n\nEnter the temperature in kelvin"
 tempf: .asciiz"\n\nEnter the temperature in fahrenheit"
 c: .asciiz"\n\nThe value in celcius = "
+k: .asciiz"\n\nThe value in kelvin = "
+f: .asciiz"\n\nThe value in fahrenheit = "
+unit: .asciiz"\n\nEnter the desired unit \npress 1 for cm\npress2 for inch\n3 for foot\n4 for meter\n5 for km "
+CM:.asciiz "\nThe value in c.m. = "
+IN:.asciiz "\nThe value in inch = "
+FT:.asciiz "\nThe value in feet = "
+MT:.asciiz "\nThe value in metre = "
+KM:.asciiz "\nThe value in kilometre = "
+unittemp: .asciiz "\n\nEnter the desired unit \npress 1for celcius\npress 2 for fahrenheit\npress 3 for kelvin \n"
+Cmtoinch:.float 0.394
+Cmtofoot:.float 0.0328
+Cmtometer:.float 0.01
+Cmtokm:.float 0.00001
