@@ -127,3 +127,28 @@ main:
 	movl	$1, %eax
 	call	printf
 	jmp	.L5
+	.L8:
+	movss	-12(%rbp), %xmm0
+	cvtss2sd	%xmm0, %xmm0
+	movsd	.LC14(%rip), %xmm1
+	mulsd	%xmm1, %xmm0
+	movl	$.LC15, %edi
+	movl	$1, %eax
+	call	printf
+	jmp	.L5
+.L9:
+	movss	-12(%rbp), %xmm0
+	cvtss2sd	%xmm0, %xmm0
+	movsd	.LC16(%rip), %xmm1
+	mulsd	%xmm1, %xmm0
+	movl	$.LC17, %edi
+	movl	$1, %eax
+	call	printf
+	jmp	.L5
+.L10:
+	movss	-12(%rbp), %xmm0
+	cvtss2sd	%xmm0, %xmm0
+	movl	$.LC18, %edi
+	movl	$1, %eax
+	call	printf
+	jmp	.L5
