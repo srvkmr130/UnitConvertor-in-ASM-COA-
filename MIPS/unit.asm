@@ -33,4 +33,8 @@ Foottocm:.float 30.48
 Foottoinch:.float 12.0
 Foottometer:.float 0.305
 Foottokm:.float 0.000305
+Metertocm:.float 100.0
+Metertoinch:.float 39.37
+Metertofoot:.float 3.28084
+Metertokm:.float 0.001
 
