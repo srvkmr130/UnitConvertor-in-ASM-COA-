@@ -29,3 +29,8 @@ Inchtocm:.float 2.54
 Inchtofoot:.float 0.83333
 Inchtometer:.float 0.0254
 Inchtokm:.float 0.0000254
+Foottocm:.float 30.48
+Foottoinch:.float 12.0
+Foottometer:.float 0.305
+Foottokm:.float 0.000305
+
