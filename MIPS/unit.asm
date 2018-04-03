@@ -25,3 +25,7 @@ Cmtoinch:.float 0.394
 Cmtofoot:.float 0.0328
 Cmtometer:.float 0.01
 Cmtokm:.float 0.00001
+Inchtocm:.float 2.54
+Inchtofoot:.float 0.83333
+Inchtometer:.float 0.0254
+Inchtokm:.float 0.0000254
