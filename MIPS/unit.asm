@@ -37,4 +37,11 @@ Metertocm:.float 100.0
 Metertoinch:.float 39.37
 Metertofoot:.float 3.28084
 Metertokm:.float 0.001
-
+KMtocm:.float 100000.0
+KMtoinch:.float 39370.079
+KMtofoot:.float 3280.8
+KMtometer:.float 1000.0
+onep8:.float 1.8
+ttw: .float 32.0
+tst: .float 273.15
+ffn: .float 459.67
