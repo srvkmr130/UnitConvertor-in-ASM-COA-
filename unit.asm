@@ -152,3 +152,15 @@ main:
 	movl	$1, %eax
 	call	printf
 	jmp	.L5
+	
+.L11:
+	movss	-12(%rbp), %xmm0
+	cvtss2sd	%xmm0, %xmm0
+	movsd	.LC19(%rip), %xmm1
+	mulsd	%xmm1, %xmm0
+	movl	$.LC20, %edi
+	movl	$1, %eax
+	call	printf
+	nop
+.L5:
+	jmp	.L17
