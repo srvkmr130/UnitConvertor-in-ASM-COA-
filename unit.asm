@@ -164,3 +164,25 @@ main:
 	nop
 .L5:
 	jmp	.L17
+	.L4:
+	movl	$.LC6, %edi
+	call	puts
+	movl	$.LC21, %edi
+	call	puts
+	movl	$.LC22, %edi
+	call	puts
+	movl	$.LC23, %edi
+	call	puts
+	leaq	-16(%rbp), %rax
+	movq	%rax, %rsi
+	movl	$.LC3, %edi
+	movl	$0, %eax
+	call	__isoc99_scanf
+	movl	-16(%rbp), %eax
+	cmpl	$50, %eax
+	je	.L13
+	cmpl	$51, %eax
+	je	.L14
+	cmpl	$49, %eax
+	je	.L15
+	jmp	.L2
