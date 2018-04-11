@@ -164,7 +164,7 @@ main:
 	nop
 .L5:
 	jmp	.L17
-	.L4:
+.L4:
 	movl	$.LC6, %edi
 	call	puts
 	movl	$.LC21, %edi
