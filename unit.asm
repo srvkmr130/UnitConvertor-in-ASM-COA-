@@ -186,3 +186,10 @@ main:
 	cmpl	$49, %eax
 	je	.L15
 	jmp	.L2
+.L15:
+	movss	-12(%rbp), %xmm0
+	cvtss2sd	%xmm0, %xmm0
+	movl	$.LC24, %edi
+	movl	$1, %eax
+	call	printf
+	jmp	.L12
