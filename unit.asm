@@ -202,3 +202,12 @@ main:
 	movl	$1, %eax
 	call	printf
 	jmp	.L12
+.L14:
+	movss	-12(%rbp), %xmm0
+	cvtss2sd	%xmm0, %xmm0
+	movsd	.LC27(%rip), %xmm1
+	addsd	%xmm1, %xmm0
+	movl	$.LC28, %edi
+	movl	$1, %eax
+	call	printf
+	nop
