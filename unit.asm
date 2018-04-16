@@ -211,3 +211,5 @@ main:
 	movl	$1, %eax
 	call	printf
 	nop
+.L12:
+	jmp	.L2
