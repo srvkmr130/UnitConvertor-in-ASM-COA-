@@ -216,3 +216,9 @@ main:
 .L17:
 	nop
 .L2:
+.L18:
+	nop
+	movq	-8(%rbp), %rax
+	xorq	%fs:40, %rax
+	je	.L16
+	call	__stack_chk_fail
