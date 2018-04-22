@@ -222,3 +222,8 @@ main:
 	xorq	%fs:40, %rax
 	je	.L16
 	call	__stack_chk_fail
+.L16:
+	leave
+	.cfi_def_cfa 7, 8
+	ret
+	.cfi_endproc
